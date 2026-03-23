@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Ersalina — Portfolio</title>
+  <meta name="description" content="Ersalina is a builder and creative technologist crafting AI-powered products. Caffeine. Curiosity. Committed." />
+  <meta name="author" content="Ersalina" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ersalina-portfolio.vercel.app/" />
+  <meta property="og:title" content="Ersalina — Portfolio" />
+  <meta property="og:description" content="Caffeine. Curiosity. Committed. Building AI-powered products that actually help people." />
+  <meta property="og:image" content="assets/images/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ersalina — Portfolio" />
+  <meta name="twitter:description" content="Caffeine. Curiosity. Committed." />
+  <meta name="twitter:image" content="assets/images/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Dark mode — must run before CSS to prevent flash -->
+  <script>
+    (function() {
+      var stored = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = stored || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ── NAV ─────────────────────────────────────────────── -->
+  <nav id="nav">
+    <div class="container">
+      <a href="#hero" class="nav-brand">
+        <span>E</span>rsalina
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-eyebrow hero-load">
+          <span class="label">Portfolio — 2025</span>
+        </div>
+        <h1 class="hero-name hero-load-2">Ersalina</h1>
+        <p class="hero-tagline hero-load-3">
+          Caffeine. Curiosity. <em>Committed.</em>
+        </p>
+        <p class="hero-sub hero-load-4">
+          Building AI-powered products that actually help people.
+        </p>
+        <div class="hero-cta hero-load-5">
+          <a href="#projects" class="btn-primary">View Work</a>
+          <a href="#contact" class="hero-link">Get in touch</a>
+        </div>
+        <div class="hero-socials hero-load-6">
+          <a href="https://github.com/echarenatra" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn" class="linkedin-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-initials" aria-hidden="true">ER</div>
+  </section>
+
+  <!-- ── ABOUT ────────────────────────────────────────────── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">— 01</span>
+        <h2 class="section-title">About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-portrait reveal">
+          <div class="portrait-placeholder" aria-hidden="true">
+            <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+              <circle cx="36" cy="26" r="14" stroke="currentColor" stroke-width="0.5"/>
+              <path d="M8 66c0-15.464 12.536-28 28-28s28 12.536 28 28" stroke="currentColor" stroke-width="0.5"/>
+            </svg>
+            <span class="label">Portrait</span>
+          </div>
+          <div class="portrait-caption">
+            <span class="label">Ersalina, 2025</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="reveal">
+            Hello — I'm Ersalina, a <strong>builder and creative technologist</strong>
+            based in the Netherlands. After a 4-year relocation, I didn't stop —
+            I evolved. I've been shipping <em>AI-powered products</em> that solve
+            real problems for real people.
+          </p>
+          <blockquote class="about-pull reveal reveal-delay-1">
+            "I didn't stop. I evolved."
+          </blockquote>
+          <p class="reveal reveal-delay-1">
+            My work sits at the intersection of design, code, and AI. I'm drawn to
+            projects where technology becomes <em>genuinely useful</em> — not just
+            impressive. Every product I build starts with a simple question:
+            does this actually help someone?
+          </p>
+          <p class="reveal reveal-delay-2">
+            Currently <em>open to new opportunities</em> — whether that's a role,
+            a collaboration, or a product idea worth building together.
+          </p>
+          <div class="skills-row reveal reveal-delay-3">
+            <span class="skill-tag">AI / LLMs</span>
+            <span class="skill-tag">Product Design</span>
+            <span class="skill-tag">Frontend Dev</span>
+            <span class="skill-tag">UX / UI</span>
+            <span class="skill-tag">Vibe Coding</span>
+            <span class="skill-tag">Web3Forms</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ─────────────────────────────────────────── -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">— 02</span>
+        <h2 class="section-title">Selected Work</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="projects-track-wrap reveal" id="projectsTrack">
+        <div class="projects-track">
+
+          <!-- Project 1 — placeholder -->
+          <a href="#" target="_blank" rel="noopener" class="project-card">
+            <div class="project-image">
+              <span class="project-image-label">Project 1 — Screenshot</span>
+            </div>
+            <div class="project-body">
+              <span class="project-index">i.</span>
+              <h3 class="project-title">Project One</h3>
+              <p class="project-desc">Short description of what this product does and who it helps. What problem does it solve?</p>
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Claude API</span>
+                <span class="project-tag">Vercel</span>
+              </div>
+              <span class="project-arrow">
+                View project
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
+                  <path d="M1 10 10 1M10 1H3M10 1v7" stroke="currentColor" stroke-width="0.7"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Project 2 — placeholder -->
+          <a href="#" target="_blank" rel="noopener" class="project-card">
+            <div class="project-image">
+              <span class="project-image-label">Project 2 — Screenshot</span>
+            </div>
+            <div class="project-body">
+              <span class="project-index">ii.</span>
+              <h3 class="project-title">Project Two</h3>
+              <p class="project-desc">Short description of what this product does and who it helps. What problem does it solve?</p>
+              <div class="project-tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">OpenAI</span>
+                <span class="project-tag">Tailwind</span>
+              </div>
+              <span class="project-arrow">
+                View project
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
+                  <path d="M1 10 10 1M10 1H3M10 1v7" stroke="currentColor" stroke-width="0.7"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Project 3 — placeholder -->
+          <a href="#" target="_blank" rel="noopener" class="project-card">
+            <div class="project-image">
+              <span class="project-image-label">Project 3 — Screenshot</span>
+            </div>
+            <div class="project-body">
+              <span class="project-index">iii.</span>
+              <h3 class="project-title">Project Three</h3>
+              <p class="project-desc">Short description of what this product does and who it helps. What problem does it solve?</p>
+              <div class="project-tags">
+                <span class="project-tag">HTML/CSS/JS</span>
+                <span class="project-tag">Claude API</span>
+              </div>
+              <span class="project-arrow">
+                View project
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
+                  <path d="M1 10 10 1M10 1H3M10 1v7" stroke="currentColor" stroke-width="0.7"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+      <p class="projects-hint reveal">Drag to explore</p>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ─────────────────────────────────────── -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">— 03</span>
+        <h2 class="section-title">Kind Words</h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial reveal">
+          <p class="testimonial-quote">
+            "Placeholder testimonial — replace with a real quote from a colleague, collaborator, or friend who can speak to your work."
+          </p>
+          <div class="testimonial-author">
+            <span class="testimonial-name">Name Here</span>
+            <span class="testimonial-role">Role / Relationship</span>
+          </div>
+        </div>
+
+        <div class="testimonial reveal reveal-delay-1">
+          <p class="testimonial-quote">
+            "Another placeholder testimonial. Reach out to 2–3 people before launch. Even one genuine quote adds real credibility."
+          </p>
+          <div class="testimonial-author">
+            <span class="testimonial-name">Name Here</span>
+            <span class="testimonial-role">Role / Relationship</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ──────────────────────────────────────────── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">— 04</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-intro">
+          <p class="reveal">
+            I'm open to conversations about <em>new roles</em>,
+            collaborations, or products worth building together.
+          </p>
+          <p class="reveal reveal-delay-1">
+            I'll get back to you soon.
+          </p>
+          <div class="contact-rule reveal reveal-delay-2"></div>
+          <dl class="contact-details reveal reveal-delay-2">
+            <dt>Location</dt>
+            <dd>Netherlands — GMT+1</dd>
+            <dt>Availability</dt>
+            <dd><em>Open</em> — available for new opportunities</dd>
+          </dl>
+          <ul class="contact-socials reveal reveal-delay-3">
+            <li><a href="https://github.com/echarenatra" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="#" target="_blank" rel="noopener" class="linkedin-link">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <!-- Web3Forms contact form -->
+        <form
+          class="contact-form reveal reveal-delay-1"
+          id="contactForm"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <!-- Replace YOUR_ACCESS_KEY with your Web3Forms key -->
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="New message from ersalina-portfolio" />
+          <input type="hidden" name="redirect" value="false" />
+          <input type="checkbox" name="botcheck" style="display:none;" />
+
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Your name" required autocomplete="name" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+
+          <div class="form-feedback" id="formFeedback" aria-live="polite"></div>
+
+          <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ───────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <p class="footer-copy">© 2025 <span>Ersalina</span> — All rights reserved</p>
+      <a href="#hero" class="footer-back">
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+          <path d="M5 9V1M1 5l4-4 4 4" stroke="currentColor" stroke-width="0.7"/>
+        </svg>
+        Back to top
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
